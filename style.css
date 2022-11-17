@@ -1,0 +1,618 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --Cyan: hsl(180, 66%, 49%);
+    --DarkViolet: hsl(257, 27%, 26%);
+    --Red: hsl(0, 87%, 67%);
+
+    --Gray: hsl(0, 0%, 75%);
+    --GrayishViolet: hsl(257, 7%, 63%);
+    --VeryDarkBlue: hsl(255, 11%, 22%);
+    --VeryDarkViolet: hsl(260, 8%, 14%);
+    
+}
+html, body{
+    max-width: 100%; 
+    overflow-x: hidden;
+}
+body{
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    margin : 2rem 3rem;
+    padding: 0 3rem;
+}
+/* =======================navbar==================== */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.left{
+    display: flex;
+}
+
+.left .logo{
+    padding-right: 3rem;
+
+}
+.links{
+    margin-top: 5px;
+}
+.link{
+    color: var(--GrayishViolet);
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 20px;
+}
+#resource{
+    margin-right: 0;
+}
+.link:hover{
+    color: var(--DarkViolet);
+}
+.login_btn{
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.login_btn:hover{
+    opacity: 0.5;
+}
+.icon{
+    display: none;
+}
+.responsiveNavbar{
+    display: none;
+
+}
+/* =================================container2 ========================= */
+.container2{
+    margin: 2rem 0 0 3rem;
+    padding: 3rem 0 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content p{
+  font-size: 70px;
+  font-weight: 700;
+  color: var(--VeryDarkBlue);
+}
+.content h3{
+    color: var(--GrayishViolet);
+    padding-bottom: 20px;
+}
+.start_btn{
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.start_btn:hover{
+    opacity: 0.5;
+}
+.illustration{
+    width: 80%;
+    float: right;
+}
+.illustration img{
+    height: 90%;
+    display: block;   
+    margin-left: auto;
+
+    width: 80%;
+}
+
+/* ====================link section ==================== */
+
+.white{
+    background-color: white;
+    height: 70px;
+    width: 100%;
+    
+}
+.abc{
+    position: relative;
+    background-color: hsl(266, 20%, 93%);
+    margin-top: 1rem;
+
+}
+
+.abc .container{
+    margin : 0 6rem 0 6rem;
+    padding: 3rem 2rem 2rem 2rem;
+    background: url(./images/bg-shorten-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-color: var(--DarkViolet);
+    border-radius: 10px;
+   
+    
+}
+.input_box{
+
+    display: flex;
+    justify-content: space-between;
+    
+}
+/* .input_box textarea:hover{
+    border: 1px solid var(--Red);
+    
+} */
+.input_box textarea{
+    padding-left: 10px;
+    padding-top: 10px;
+   border-radius: 5px;
+}
+ ::placeholder:hover{
+    color: var(--Red);
+}
+
+
+
+
+
+/* .input_box textarea:hover{
+    color: var(--Red);
+} */
+.short_btn{
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.short_btn:hover{
+    opacity: 0.9;
+}
+
+.onClick{
+    margin: 5px;
+    color: var(--Red);
+    /* display: none; */
+    visibility: hidden;
+}
+
+/* =======================================JAVASCRIPT DIV ================== */
+
+.output{
+    margin : 6rem 6rem 0 6rem;
+  
+   
+}
+.output_box{
+    padding: 1rem 2rem ;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    /* display: none; */
+    margin-bottom: 10px;
+
+
+}
+.output p{
+    position: relative;
+    top: 5px;
+
+}
+.second{
+    display: flex;
+    
+}
+#outputLink{
+    position: relative;
+    color: var(--Cyan);
+    margin-right: 10px;
+    top: 5px;
+}
+.copy{
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 7px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}
+
+/* =====================after js container css=============== */
+.center_info{
+    margin-top: 4rem;
+    padding-top: 3rem;
+    
+}
+.center_info h1{
+    text-align: center;
+    color: var(--VeryDarkBlue);
+    font-weight: bold;
+}
+.center_info p{
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0 auto;
+    color: var(--GrayishViolet);
+    width: 30%;
+    font-size: 14px;
+    
+}
+/* =================card css================ */
+.card_container{
+    margin : 0 6rem 0 6rem;
+    padding-top: 3rem;
+    position: relative;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.center_line{
+    height: 7px;
+    background-color: var(--Cyan);
+    position: relative;
+    top: 8rem;
+}
+.card1,.card2,.card3{
+    background-color: white;
+    width: calc(30% - 5px);
+  
+    padding: 0 2rem 2rem 2rem;
+    position: relative;
+    border-radius: 5px;
+    height: 100%;
+ 
+}
+.card2{
+    margin-top: 2rem;
+}
+.card3{
+    margin-top: 5rem;
+}
+ .img1 {
+   
+   
+    top: -30px;
+    padding: 10px;
+    background-color: var(--VeryDarkViolet);
+    border-radius: 50%;
+    position: absolute;
+    
+}
+.img2{
+    position: absolute;
+    top: -20px;
+    background-color: var(--VeryDarkViolet);
+    padding: 7px 5px 5px 7px;
+    border-radius: 50%;
+}
+.img3{
+    position: absolute;
+    top: -25px;
+    background-color: var(--VeryDarkViolet);
+    padding: 10px 0 5px 10px;
+    border-radius: 50%;
+}
+.card1 .img1 img{
+    height: 60%;
+    width:90%;
+}
+.card_info{
+     background-color: white;
+}
+.card_heading{
+    color: var(--VeryDarkBlue);
+    font-weight: bold;
+    padding-top: 3rem;
+}
+.card_info .info{
+    padding-top: 1rem;
+    color:var(--Gray);
+}
+.img2 img{
+    height: 60%;
+    width:90%;
+}
+.img3 img{
+    height: 50%;
+    width:70%;
+}
+/* ====================prefooter css=============== */
+.pre_footer{
+    margin-top: 3rem;
+    padding: 3rem;
+    background: url(./images/bg-boost-desktop.svg);
+    background-color: var(--DarkViolet);
+    
+}
+.pre_footer h1{
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+ .start-btn{
+    background-color: var(--Cyan);
+    color: white;
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .start-btn:hover{
+     opacity: 0.5;
+ }
+ /* ================footer css ============= */
+
+ .footer{
+    margin : 0 0;
+    padding: 2rem 6rem;
+    background-color: var(--VeryDarkViolet);
+    display: flex;
+    justify-content: space-between;
+}
+
+.col2, .col3, .col4{
+    color: white;
+    cursor: pointer;
+}
+.col2 li{
+    padding-top: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Gray);
+}
+.col3 li{
+    padding-top: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Gray);
+}
+
+.col4 li{
+    padding-top: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    color: var(--Gray);
+}
+
+ .t,.p, .f, .i{
+    padding: 0 10px;
+   
+}
+
+.footer li:hover{
+    color: var(--Cyan);
+}
+/* .col5 img{
+    fill: #fff;
+} */
+.col5 img:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(91%) sepia(9%) saturate(5556%)
+    hue-rotate(131deg) brightness(89%) contrast(80%);
+   }
+
+/*  ------------------------------------------- RESPONSIVE CSS ---------------------------------- */
+
+@media screen and (max-width : 768px) {
+
+
+
+    .container{
+        padding: 0;
+    }
+    .links{
+        display: none;
+    }
+    .link, .login_btn{
+        display: none;
+    }
+
+    .container2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem;
+        padding: 1rem;
+    }
+    .content p{
+        font-size: 40px;
+         font-weight: 700;
+        color: var(--VeryDarkBlue);
+        text-align: center;
+        padding-top: 10px;
+    }
+    .content h3{
+        text-align: center;
+      
+    }
+    .start_btn{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .illustration{
+        width: 100%;
+        float: none;
+
+    }
+    .illustration img{
+        height: 100%;
+        display: block;   
+        margin-left: auto;
+
+        width: 100%;
+
+    }
+    .abc .container{
+        margin: 2rem;
+        background: url(./images/bg-shorten-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: auto;
+        background-color: var(--DarkViolet);
+        border-radius: 10px;
+    }
+    .input_box{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .short_btn{
+        margin-top: 10px;
+    }
+    .output{
+        margin: 9rem 2rem 0 2rem;
+    }
+    .output_box{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        overflow-x: hidden;
+
+
+    }
+    .second{
+        border-top: 1px solid var(--Gray);
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .copy{
+        margin-top: 1rem;
+    }
+    .center_info p{
+        width: 80%;
+    }
+    .card_container{
+        margin: 0 2rem;
+    }
+    .cards{
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 9;
+    }
+    .card1, .card2, .card3{
+        margin: 3rem auto;
+        width: 18rem;
+    }
+    .img1, .img2, .img3{
+        margin: 0 auto;
+        left: 120px;
+    }
+    .footer{
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .col2, .col3, .col4{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    .col5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    /* =================responsive navbar css================= */
+
+    .icon{
+        display: block;
+        float: right;
+        position: absolute;
+    }
+    .responsiveNavbar{
+        display: block;
+        margin:  0 3rem;
+        background-color: var(--DarkViolet);
+        border-radius: 10px;
+        padding: 1rem;
+
+        /* visibility: hidden; */
+
+        display: none;
+    }
+    .res-links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+     .a{
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .res-right{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid var(--Gray);
+
+    }
+    .b{
+        background-color: var(--Cyan);
+        color: white;
+        border: none;
+        font-weight: bold;
+        padding: 7px 50px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .center_line{
+        width: 7px;
+        height: 40rem;
+        position: absolute;
+        /* top: 7rem;
+        left: 9rem; */
+        top: 50%;
+        left: 50%;
+        margin-top: -20em; /*set to a negative number 1/2 of your height*/
+    }
+    .display{
+        display: block;
+    }
+}
